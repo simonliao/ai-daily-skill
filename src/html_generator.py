@@ -390,6 +390,17 @@ class HTMLGenerator:
     --title-color: #FFFFFF;
 }
 
+/* 0. 极简白(亮色)主题 */
+body[data-theme="light"] {
+    --bg-color: #FFFFFF;
+    --title-color: #1D1D1F;
+    --glow-start: #FFFFFF;
+    --glow-end: #F5F5F7;
+    --text-color: #333333;
+    --accent-color: #0066CC;
+    --secondary-color: #86868B;
+}
+
 /* 1. 柔和蓝色主题 */
 body[data-theme="blue"] {
     --glow-start: #0A1929;

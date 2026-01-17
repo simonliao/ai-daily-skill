@@ -49,6 +49,17 @@ NOTIFICATION_TO = os.getenv("NOTIFICATION_TO")
 # 8种主题配色方案
 # ============================================================================
 THEMES = {
+    "light": {
+        "name": "极简白(亮色)",
+        "description": "适用于清爽/阅读/通用类内容",
+        "glow_start": "#FFFFFF",
+        "glow_end": "#F5F5F7",
+        "title": "#1D1D1F",
+        "text": "#333333",
+        "accent": "#0066CC",
+        "secondary": "#86868B",
+        "gradient": "linear-gradient(135deg, #FFFFFF 0%, #F5F5F7 100%)"
+    },
     "blue": {
         "name": "柔和蓝色",
         "description": "适用于科技/商务/数据类内容",
@@ -179,18 +190,18 @@ CATEGORIES = {
 # 内容类型到主题的映射
 # ============================================================================
 CATEGORY_THEME_MAP = {
-    "model": "blue",      # 模型/框架/开发工具
-    "product": "indigo",   # 企业动态/产品发布
-    "funding": "teal",     # 融资/并购/金融
-    "tools": "blue",       # 开发工具
-    "research": "gray",    # 研究/论文/数据
-    "events": "orange",    # 热点/争议话题
+    "model": "light",
+    "product": "light",
+    "funding": "light",
+    "tools": "light",
+    "research": "light",
+    "events": "light",
 }
 
 # ============================================================================
 # 默认主题（当无法判断内容类型时使用）
 # ============================================================================
-DEFAULT_THEME = "blue"
+DEFAULT_THEME = "light"
 
 # ============================================================================
 # 网站元信息
